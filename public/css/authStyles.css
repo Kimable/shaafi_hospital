@@ -1,0 +1,109 @@
+.admin-dashboard {
+    background-color: var(--secondary-light);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.patient-dashboard-container {
+    background-color: var(--secondary-light);
+    border-radius: 16px;
+    padding: 1rem 2rem;
+}
+
+.dashboard-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-items .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item a {
+    color: var(--light);
+    text-decoration: none;
+}
+.item i {
+    font-size: 30px;
+}
+
+.item a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.dashboard-items .item {
+    background-color: var(--secondary);
+    color: var(--light);
+    margin: 0.4rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+    width: 30%;
+}
+
+/* Message Notifications */
+.message-notifications {
+    background-color: var(--primary);
+    color: white;
+    font-size: 14px;
+    padding: 0.1rem 0.2rem;
+    border-radius: 5px;
+}
+
+.utility {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-appointment .card-body {
+    text-align: left;
+}
+
+.doctor-profile .card-body {
+    text-align: left;
+}
+
+.doctor-avatar,
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+/* Manage Doctors Styles */
+.manage-doctors .doctor-item {
+    background-color: var(--secondary-light);
+    margin-bottom: 0.35rem;
+}
+
+/* Patient avatar styles */
+.patient-dashboard label {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--secondary);
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.user-img {
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .dashboard-items .item {
+        width: 100%;
+    }
+}

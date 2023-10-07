@@ -1,0 +1,225 @@
+.hero {
+    height: 300px;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+}
+
+.about .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/nurse-measuring-patient-blood-pressure.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.health-support .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/health-support.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.life-support .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/life-support.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-story .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/operation-sm.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.services .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/hospital-equip-sm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.doctors .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/doctor-illustration.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.appointment .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/laboratory-lg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Contact Us Page */
+.contact .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/envelope.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-form form,
+.appointment form {
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: var(--light);
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--secondary-light);
+}
+
+/* About us page styles */
+.mission-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../img/operation-sm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--light);
+    margin-bottom: 2rem;
+}
+
+/* Appointment Page */
+.appointment .form-floating {
+    color: var(--secondary);
+    margin-bottom: 0.3rem;
+}
+
+.appointment .form-floating input {
+    background-color: var(--secondary-light);
+}
+.appointment .form-floating textarea {
+    background-color: var(--secondary-light);
+    height: 120px;
+}
+
+/* Search filter component and Bottom Nav */
+.search_filter .form-select,
+.search_filter_btn {
+    width: 200px;
+}
+
+.search_filter {
+    background-color: var(--secondary);
+}
+
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .bottom-nav {
+        display: block;
+    }
+
+    .search_filter .form-select,
+    .search_filter_btn {
+        width: 300px;
+    }
+}
+
+.fixed-bottom a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.fixed-bottom .item {
+    width: 200px;
+    height: 80px;
+    padding: 1rem 1.3rem;
+    background-color: var(--primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-bottom .item i {
+    color: var(--light);
+    font-size: 25px;
+}
+
+.fixed-bottom .item .link-text {
+    font-size: 10px;
+}
+
+/* Sub menu styles */
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-hover:hover > .dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-hover > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+/* Forms Style */
+.form-container form {
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: var(--light);
+}
+
+.form-select {
+    width: 100%;
+}
+
+.nav-header {
+    background-color: var(--secondary);
+}
+
+.nav-header a {
+    color: var(--light);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .dropdown-menu .dropdown-submenu {
+        display: none;
+        position: absolute;
+        left: 10%;
+        top: 40px;
+    }
+}

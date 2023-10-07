@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+    --bs-body-font-family: "Open Sans", sans-serif;
+}
+
+.red {
+    color: red;
+}
